@@ -1,0 +1,330 @@
+
+body{
+   overflow-x: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 20px;
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-desctop{
+    display:none;
+}
+
+.burger {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-box{
+    width: 150px;
+
+}
+
+.logo-box img {
+    width: 100%;
+}
+
+.mobile-nav{
+    display: none;
+}
+
+.mobile-nav *{
+    margin: -3px 10px 0 10px;
+    color: #7287d3;
+    font-size: 17px;
+}
+
+.signup{
+    background: #7287d3;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 5px
+}
+
+.signup:hover{
+    background: #7399d3;
+
+}
+
+.employer-employee{
+  display: none;
+}
+
+.employer{
+    background: #7287d3;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 10px
+}
+.btn-desktop-box{
+    display: none;
+}
+
+.logged-user{
+    display: flex;
+}
+
+.btn-user{
+    background: #7287d3;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-top: -5px
+}
+
+.out{
+    background: #7287d3;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-top: -5px
+}
+
+.job-header-text{
+    color: #7287d3;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.inpt{
+    margin: 20px;
+    width: 100%;
+    height: 40px;
+}
+
+.sign-in-form{
+    display: block;
+    margin: auto;
+    width: 600px
+}
+
+.btn-submit{
+    width: 100%;
+    margin-left: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+
+
+.jobs-card{
+    margin: 50px 0px 20px 0px;
+    padding-bottom: 20px;
+    width: 600px;
+
+}
+
+
+.forms{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    border: solid 2px #7287d3;
+    color: red;
+}
+
+.forms * {
+    margin-top: 10px;
+}
+
+
+.botm{
+    border-bottom: 1px solid #7287d3;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.read-more{
+    margin: 10px 0 10px 0;
+}
+
+.detail-view{
+    margin-top: 50px;
+
+}
+
+.detail-view h3{
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.descript{
+    font-style: italic;
+    margin-bottom:10px;
+}
+
+.currency{
+    font-weight: 600;
+}
+
+.date{
+    margin-top: 10px;
+
+}
+
+.search{
+    width: 100px;
+    margin-left: -10px;
+    display: none;
+}
+
+.searchbtn{
+    background: #7287d3;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    display: none;
+}
+
+.search-input{
+    width: 100%;
+    display: none;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .logged-user > span{
+        font-size: 18px;
+        color:  #7287d3;
+    }
+
+    .hello-user{
+        font-size: 18px;
+        margin-left: 5px;
+        color:  #7287d3;
+    }
+
+    .result{
+        width: 500px;
+    }
+
+    .search{
+        width: 250px;
+        margin-left: -10px;
+        display:flex;
+    }
+
+    .logo-box{
+       width: 150px;
+
+    }
+
+    .logo-box img {
+        width: 100%;
+    }
+
+    .searchbtn{
+        background: #7287d3;
+        color: white;
+        border: none;
+        padding: 5px;
+        cursor: pointer;
+        margin-left: 5px;
+        display: flex;
+    }
+
+    .search-input{
+        width: 120px;
+        display: flex;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+    .burger {
+        display: none;
+    }
+
+
+    .logo-box{
+        width: 200px;
+
+    }
+
+    .logo-box img {
+        width: 100%;
+    }
+
+    .mobile-nav{
+        display: flex;
+    }
+
+    .mobile-nav *{
+       margin: -7px 30px 0 14px;
+        color: #7287d3;
+        font-size: 14px;
+        width: 41px;
+    }
+
+    .signup{
+        background: #7287d3;
+        color: white;
+        border: none;
+        height: 35px;
+        width: 100px;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .signup:hover{
+        background: #7399d3;
+
+    }
+
+    .btn-desktop-box{
+        display: flex;
+    }
+
+    .logged-user > span{
+        font-size: 18px;
+        color:  #7287d3;
+    }
+
+    .hello-user{
+        font-size: 18px;
+        margin-left: 5px;
+        color:  #7287d3;
+    }
+}
+

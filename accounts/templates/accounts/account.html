@@ -1,0 +1,93 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'main/css/index.css' %}">
+    <title>User page</title>
+</head>
+<body>
+    <div class="container">
+         <div class="header">
+            <!-- logo-->
+                <div class="logo-box">
+                     <a href="{% url 'home' %}">
+                        <img src="{% static 'main/images/logo.png' %} "  class="logo" alt="">
+                    </a>
+                </div>
+
+            <!--Navigation bar -->
+                <nav class="mobile-nav">
+                    <a href="{% url 'home' %}" class="home_text">
+                        Home
+                    </a>
+
+                    <a href="{% url 'jobs' %}" class="jobs_text">
+                        Jobs
+                    </a>
+                </nav>
+
+
+
+                {% if request.user.is_authenticated %}
+                 <div class="logged-user">
+                          <span>Hello</span><p class="hello-user">{{ user }}</p>
+
+                         <a href=" {% url 'FreelanerGeorgia:freelancer_create' %}  ">
+                             <button class="btn-user">Main Page</button>
+                         </a>
+
+                         <form class="logout" method="post" action="{% url 'logout' %}">
+                            {% csrf_token %}
+                            <button class="out" type="submit">Logout</button>
+                         </form>
+
+                         <a href="{% url 'jobs' %}" >
+                            <button class="out" type="submit">Jobs</button>
+                         </a>
+                  </div>
+
+                 {% else %}
+
+
+            <!--Btn Mobile-->
+                <div class="btn-desktop-box">
+                      <div class="btn-desktop-box">
+
+                    <a href="{% url 'login' %}">
+                        <button class="signup" type="submit">Log In</button>
+                    </a>
+
+                    <a href="{% url 'sign_up' %}">
+                        <button class="signup" type="submit">Sign Up</button>
+                    </a>
+                </div>
+                </div>
+
+                {% endif %}
+
+            <!--Btn Mobile-->
+                <div class="btn-mobile-box">
+                    <h2 class="burger">︾</h2>
+                </div>
+            </div>
+
+        <div class="account-inner">
+            <a href="{% url 'create' %}">
+                <button type="submit" class="addBtn">Add</button>
+            </a>
+
+            <a href="http://127.0.0.1:8000/admin/jobs/articles/" target="_blank">
+                <button type="submit" class="addBtn">My vacancy</button>
+            </a>
+
+        </div>
+    </div>
+
+
+    <script src="{% static 'accounts/js/burger.js' %}"></script>
+</body>
+</html>

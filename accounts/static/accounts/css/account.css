@@ -1,0 +1,164 @@
+body{
+    background: rgb(242, 235, 235);
+}
+
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-box{
+    width: 150px;
+
+}
+
+.logo-box img {
+    width: 100%;
+}
+
+.mobile-nav{
+    display: none;
+}
+
+.mobile-nav *{
+    margin: -3px 10px 0 10px;
+    color: #7287d3;
+    font-size: 17px;
+}
+
+.signup{
+    background: #7287d3;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 5px
+}
+
+.signup:hover{
+    background: #7399d3;
+
+}
+
+.btn-desktop-box{
+    display: none;
+}
+
+
+.logged-user > span{
+    color: #7399d3;
+}
+
+.login-header{
+     margin-bottom: 20px;
+    color: #7287d3;
+    font-family: suns serif;
+}
+
+.login-container *{
+    display: block;
+    margin:auto;
+    margin-top: 20px;
+    text-align: center;
+    width: 300px;
+    height: 30px;
+}
+
+.signup-inner *{
+    display: block;
+    margin:auto;
+    margin-top: 5px;
+    width: 300px;
+    height: 30px;
+}
+
+.logged-user{
+    display: flex;
+}
+
+.btn-user{
+    background: #7287d3;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-top: -5px
+}
+
+.out{
+    background: #7287d3;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-top: -5px
+}
+
+.signup-header{
+     margin-bottom: 20px;
+    color: #7287d3;
+    text-align: center;
+}
+
+.helptext{
+    display: none;
+}
+
+.login-container a{
+    font-size: 9px;
+}
+
+@media screen and (min-width: 1024px) {
+    .burger {
+        display: none;
+    }
+
+
+    .logo-box{
+        width: 200px;
+
+    }
+
+    .logo-box img {
+        width: 100%;
+    }
+
+    .mobile-nav{
+        display: flex;
+    }
+
+    .mobile-nav *{
+        margin: -3px 40px 0 10px;
+        color: #7287d3;
+        font-size: 17px;
+        font-size: 27px;
+    }
+
+    .signup{
+        background: #7287d3;
+        color: white;
+        border: none;
+        height: 35px;
+        width: 150px;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .signup:hover{
+        background: #7399d3;
+
+    }
+
+    .btn-desktop-box{
+        display: flex;
+    }
+
+
+
+}
+
+
