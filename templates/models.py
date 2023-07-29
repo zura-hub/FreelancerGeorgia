@@ -8,3 +8,6 @@ class Temp(models.Model):
     phone = models.CharField('mobile', max_length=50)
     mail = models.EmailField('email')
     price = models.CharField('price', max_length=50, blank=True)
+
+    def __str__(self):
+        return self.title

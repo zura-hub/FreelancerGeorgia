@@ -3,10 +3,8 @@ from .forms import TempForms
 from .models import Temp
 
 def templates(request):
-
-
-    return render(request, 'templates/templates.html')
-
+    temps = Temp.objects.all()  # Fetch all Temp objects from database
+    return render(request, 'templates/templates.html', {'temps': temps})  # Pass Temp objects to the template
 
 def create_template(request):
     form = TempForms()  # Default form to handle GET request and invalid POST request

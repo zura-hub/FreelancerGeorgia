@@ -101,34 +101,33 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container-temp">
+     {% for temp in temps %}
+        <div class="temp_card">
+            <div class="temp_card_inner">
+                <form action="" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {% if temp.designe %}
+                        <img class="cover" src="{{ temp.designe.url }}"> <br>
+                    {% endif %}
 
-            <ul>
-      <form action="" method="post" enctype="multipart/form-data">
-        {% csrf_token %}
-
-        {% for freelancer in freelancers %}
-              {% if freelancer.cover_img %}
-                <img class="cover_img" src="{{ freelancer.cover_img.url }}">
-             {% endif %}
-            <li>
-                <p>{{ Temp.title }}</p>
-                <p>{{ Temp.designe }}</p>
-                <p>{{ Temp.link }}</p>
-                <p>{{ Temp.phone }}</p>
-                <p>{{ Temp.mail }}</p>
-                <p>{{ Temp.price }}</p>
-            </li>
-
-
+                    <div class="text">
+                        {{ temp.title }}<br>
+                        <a href="{{ temp.link }}">Link</a><br>
+                        {{ temp.phone }}<br>
+                        {{ temp.mail }}<br>
+                        {{ temp.price }}<br>
+                    </div>
+                </form>
+            </div>
+        </div>
     {% empty %}
-        <li>No Templates available.</li>
+        <div>No Templates available.</div>
     {% endfor %}
-    </form>
 
-
+</div>
 
     <script src="{% static 'main/js/index.js' %}"></script>
     <script src="{% static 'main/js/burger.js' %}"></script>
-</body>
+    </body>
 </html>

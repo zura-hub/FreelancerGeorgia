@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'jobs',
     'accounts',
     'freelacersProfiles',
-    'templates'
+    'templates',
+    'resset',
 
 ]
 

@@ -10,5 +10,6 @@ urlpatterns = [
     path('accounts/', include('accounts.urls')),
     path('freelacersProfiles/', include('freelacersProfiles.urls')),
     path('templates/', include('templates.urls')),
+    path('resset/', include('resset.urls')),
 
 ]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

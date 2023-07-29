@@ -162,6 +162,22 @@ a{
     font-size: 10px;
 }
 
+.temp_card{
+    width: 360px;
+    margin:20px;
+    display:block;
+    margin:auto;
+}
+
+.temp_card_inner{
+    width:100%;
+    margin:20px;
+}
+
+.temp_card > ul{
+    list-style:none;
+}
+
 
 .add_temp{
     background: #7287d3;
@@ -231,6 +247,10 @@ a{
     display:flex;
     justify-content: space-between;
     width: 100%;
+}
+
+.space{
+    margin-bottom:35px;
 }
 
 .addBtn{
@@ -324,6 +344,40 @@ a{
         object-fit: cover;
     }
 
+    .container-temp {
+         display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .temp_card {
+        padding: 5px;
+    }
+
+    .cover{
+        width:300px;
+        height:300px;
+        object-fit:cover;
+    }
+
+    .temp_card_inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .temp_card_inner img {
+        width: 100%;
+    }
+
+    .temp_card_inner .text {
+        margin-top: auto;
+    }
+
+
+     .cover{
+        display:block;
+    }
+
     .account-inner{
         display:flex;
         justify-content: space-between;
@@ -378,6 +432,29 @@ a{
     .logo-box{
         width: 200px;
 
+    }
+
+    .container-temp {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .temp_card {
+        padding: 10px;
+    }
+
+    .temp_card_inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .temp_card_inner img {
+        width: 100%;
+    }
+
+    .temp_card_inner .text {
+        margin-top: auto;
     }
 
     .logo-box img {
