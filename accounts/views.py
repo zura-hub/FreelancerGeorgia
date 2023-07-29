@@ -5,15 +5,15 @@ from django.contrib import messages
 
 
 
-
 def sign_up(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
         if form.is_valid():
             form.save()
             username = form.cleaned_data['username']
+            email = form.cleaned_data['email']
             password = form.cleaned_data['password1']
-            user = authenticate(username=username, password=password)
+            user = authenticate(username=username, emil=email, password=password)
             login(request, user)
             messages.success(request, "Registration Success")
             return redirect('home')
