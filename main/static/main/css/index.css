@@ -12,6 +12,7 @@ body{
     padding: 20px;
 }
 
+
 nav{
     display:flex;
     justify-content: space-between;
@@ -49,21 +50,31 @@ a{
 }
 
 .mobile-nav *{
-        margin: -7px 30px 0 14px;
+        margin: -7px 30px 0 4px;
         color: #7287d3;
-        font-size: 14px;
-        width: 41px;
+        font-size: 12px;
+        width: 20px;
 }
 
 
-
 .signup{
+    font-size: 10px;
     background: #7287d3;
     color: white;
     border: none;
     padding: 5px;
     cursor: pointer;
     margin-left: 5px
+}
+
+.sumbit_btn{
+    display:flex;
+    float: left;
+}
+
+.go_back{
+    font-weight: 900;
+    color:#7287d3;
 }
 
 .signup:hover{
@@ -142,10 +153,28 @@ a{
 
 .hello-user{
     display: inline;
+
     text-transform: uppercase;
     margin: 0px 15px 0px 10px;
 }
 
+.logged-user > span{
+    font-size: 10px;
+}
+
+
+.add_temp{
+    background: #7287d3;
+    height:40px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    cursor:pointer;
+    width:100px;
+    margin-left: -50px;
+    margin-top: 30px;
+}
 
 .carousel {
   position: relative;
@@ -191,7 +220,7 @@ a{
 }
 
 .main-conteiner{
-    position: fixed;
+    position: absolute;
     top: 130px;
     left: 30px;
     color: white;
@@ -332,6 +361,11 @@ a{
         display: flex;
     }
 
+     .main{
+        display:flex;
+        justify-content: space-between;
+     }
+
 }
 
 
@@ -357,9 +391,11 @@ a{
     .mobile-nav *{
         margin: -7px 30px;
         color: #7287d3;
-        font-size: 18px;
-        width: 41px;
+        font-size: 15px;
+        width: 20px;
     }
+
+
 
     .signup{
         background: #7287d3;
@@ -390,6 +426,11 @@ a{
 
     .hello-user{
         font-size: 18px;
+    }
+
+    .main{
+        display:flex;
+        justify-content: space-between;
     }
 
 }

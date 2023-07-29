@@ -62,9 +62,9 @@
                             <button class="out" type="submit">Logout</button>
                          </form>
 
-<!--                         <a href="{% url 'jobs' %}" >-->
-<!--                            <button class="out" id="jobs" type="submit">Jobs</button>-->
-<!--                         </a>-->
+                         <a href="{% url 'jobs' %}" >
+                            <button class="out" id="jobs" type="submit">Jobs</button>
+                         </a>
                      </div>
 
                  {% else %}
@@ -102,44 +102,22 @@
     </div>
 
 
+<div class="container">
+     <h1 class="freelancer_header">Add Template</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %} <br>
+        {{ form.title }}<br><br>
+        {{ form.designe }}<br><br>
+        {{ form.link }}<br><br>
+        {{ form.phone }}<br><br>
+        {{ form.mail }}<br><br>
+        {{ form.price }} <br><br>
+        <input class="sumbit_btn" type="submit" value="Create">
 
 
-        <div class="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="{% static 'main/images/background-img-one.jpg' %}" alt="Image 1">
-            </div>
-            <div class="carousel-item">
-              <img  src="{% static 'main/images/background-img.jpg' %}" alt="Image 2">
-            </div>
-            <div class="carousel-item">
-              <img  src="{% static 'main/images/background-img-two.jpg' %}" alt="Image 2">
-            </div>
-              <div class="carousel-item">
-              <img  src="{% static 'main/images/background-img-tree.jpg' %}" alt="Image 2">
-            </div>
-              <div class="carousel-item">
-              <img class="car-img" src="{% static 'main/images/background-img-four.jpg' %}" alt="Image 2">
-            </div>
-          </div>
-
-            <div class="container">
-               <div class="main-conteiner">
-                    <h2 class="header"> ჩვენთან შეგიძლია </h2> <br><br>
-                    <p class="main-paragraph">მოძებნო შენთვის სასურველი კანდიდატი პროფესიის მიხედვით, 2000 -ზე მეტი ქართველი ფრილანსერი
-                    ერთ სივრცეში, ჩვენთან შეგძლია მოძებნო სასურველი: <br><br>
-                        1. ვებ  დეველოპერი <br>
-                        2. Android დეველოპერი <br>
-                        3. IOS დეველოპერი <br>
-                        4. თარგიმანი <br>
-                        5. Gaming დეველოპერი <br>
-                        6. ტესტერი <br>
-                        7. ასოთამწყობი <br>
-                    </p>
-               </div>
-            </div>
-
-    </div>
+    </form>
+</div>
 
 
 

@@ -87,8 +87,9 @@
     </div>
 
 
-
-<div class="freelancer_main">
+<div class="container">
+    <div class="main">
+    <div class="freelancer_main">
     <h1 class="freelancer_header">Create Your Profile</h1>
 
     <form method="POST" enctype="multipart/form-data">
@@ -99,12 +100,24 @@
         <p> Profession: </p>{{ form.profession }}
         <p> Experience: </p> {{ form.experience }}
         <p> Skills: </p>{{ form.skills }}
-        <p > Cover Letter: </p> {{ form.cover_letter }}
-        <input type="submit" value="Create">
+        <p > Cover Letter: </p> {{ form.cover_letter }} <br>
+        <input class="sumbit_btn" type="submit" value="Create">
     </form>
-    <a href="{% url 'FreelanerGeorgia:freelancer_list' %}">Back to List</a>
+    <a class="go_back" href="{% url 'FreelanerGeorgia:freelancer_list' %}">Back to List</a>
 
 </div>
+
+    <div class="add">
+        <a href="{% url 'create_template'  %}">
+            <button class="add_temp">
+                + Add template
+            </button>
+        </a>
+    </div>
+
+</div>
+</div>
+
 
 
 
