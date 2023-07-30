@@ -23,9 +23,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-inseo23fdsdfcure-1$8obt2_+&k3q+pmu)5%as-w@v5lj%97692nmnsdfp8"(+weeh!r+51#izi6h9$qiqwoe82739nd501vy89!e)4p*tbe(e@1n'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['*']
+=======
+ALLOWED_HOSTS = ['127.0.0.1']
+>>>>>>> 4bd70acf3b4265b9caba25c855ca94d1e597a374
 
 
 
@@ -49,6 +53,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
